@@ -1,2 +1,2 @@
-# nickgraviton.github.io
-Personal website
+# Personal website
+Repository hosting my personal website

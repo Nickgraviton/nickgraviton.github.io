@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{multicol}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[hyperref]{}
+\usepackage[scale=0.9]{geometry} % Reduce document margins
+\usepackage{fontawesome}
+
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Nikos} % Your first name
+\familyname{Filinis} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Software Developer}
+\address{Athens, Greece}{}
+%\phone{}
+\email{nikos.filinis@tutanota.com}
+% \homepage{}{} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{\faGithub \href{https://github.com/Nickgraviton}{Nickgraviton}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2015--2021}{National Technical University of Athens}
+{\newline Electrical and Computer Engineering}{Master of Engineering}{}{}  % Arguments not required can be left empty
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Experience}
+
+% \subsection{%Vocational}
+
+% \cventry{}{}{}{}{}{}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\section{Projects}
+
+\cventry{}
+{\href{https://github.com/Nickgraviton/pharmasea}{PharmaSea}}
+{\newline Webapp where users can utilize crowdsourcing to create a price tracking platform for medicine}
+{\newline Used:
+\newline Front-end: \emph{HTML, CSS, JavaScript, Bootstrap}
+\newline Back-end: \emph{Java, Spring Boot, MySQL, Gradle}}{}{}
+
+\cventry{}
+{\href{https://github.com/Nickgraviton/pcl-compiler}{PCL Compiler}}
+{\newline Compiler for a Pascal-like toy language}
+{\newline Used: \emph{C++, flex, bison, LLVM}}{}{}
+
+\cventry{}
+{\href{https://github.com/Nickgraviton/airport-management-system}{Airport Management System}}
+{\newline GUI application for an airport management system}
+{\newline Used: \emph{Java, JavaFX}}{}{}
+
+\cventry{}
+{\href{https://github.com/Nickgraviton/noobcash}{Noobcash}}
+{\newline Simple blockchain implementation}
+{\newline Used: \emph{Python, Flask}}{}{}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\cventry{April 2022}
+{\href{https://gitlab.com/netmode/k8s-rl-autoscaler}{Reinforcement learning-assisted autoscaling mechanisms for serverless computing platforms}}
+{\href{https://doi.org/10.1016/j.simpat.2021.102461}{Simulation Modelling Practice and Theory Volume 116, April 2022, 102461}}
+{\newline Automatic scaling mechanisms that use reinforcement learning to determine the optimal amount of resources that need to be provisioned to maximize performance and minimize use of said resources}
+{\newline Used: \emph{Kubernetes, Docker, Kubeless, Python, OpenAI Gym, Tensorflow, Tf-agents}}{}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{\textbf{Programming \newline \textbf{Skills}}}{Java, Python, C++, C, JavaScript, HTML, CSS, SQL}
+\cvitem{\textbf{Frameworks/}\newline \textbf{Tools}}{Spring Boot, Git, Kubernetes, Docker, Flask, JavaFX, Matplotlib, Numpy, Pandas}
+\cvitem{\textbf{Languages}}{Greek (Native), English(C2), German(C1)}
+
+\end{document}
