@@ -1,7 +1,7 @@
 ---
 date: '2025-04-26T15:27:11+03:00'
 ---
-# CV {{< fa-pdf-icon filename="/cv.pdf" >}}
+# CV {{< pdf-icon filename="/cv.pdf" >}}
 
 ## Education
 *   **2022 - Present**
