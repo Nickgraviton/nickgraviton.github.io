@@ -1,138 +1,141 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% "ModernCV" CV and Cover Letter
-% LaTeX Template
-% Version 1.3 (29/10/16)
-%
-% Original author:
-% Xavier Danaux (xdanaux@gmail.com) with modifications by:
-% Vel (vel@latextemplates.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-% Important note:
-% This template requires the moderncv.cls and .sty files to be in the same
-% directory as this .tex file. These files provide the resume style and themes
-% used for structuring the document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}       % set main text size
+\usepackage[a4paper,                % set paper size to a4paper
+  top=0.5in,                        % specify top page margin
+  bottom=0.5in,                     % specify bottom page margin
+  left=0.5in,                       % specify left page margin
+  right=0.5in                       % specify right page margin
+]{geometry}
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+\usepackage{enumitem}               % enable lists for bullet points: itemize and \item
+\usepackage[hidelinks]{hyperref}    % format hyperlinks
+\usepackage{titlesec}               % enable section title customization
+\usepackage{fontspec}               % enable font customization
+\setmainfont{Source Sans Pro}
+\raggedright                        % disable text justification
+\pagestyle{empty}                   % disable page numbering
 
-\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+% format section headings: bolding, size, white space above and below
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-6.5pt}]
 
-\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-\usepackage{multicol}
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-\usepackage[hyperref]{}
-\usepackage[scale=0.9]{geometry} % Reduce document margins
-\usepackage{fontawesome}
+% format bullet points: size, white space above and below, white space between bullets
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt, topsep=7pt} %%% Test various topsep values to fix vertical spacing errors
 
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
-
-%----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
-%----------------------------------------------------------------------------------------
-
-\firstname{Nikos} % Your first name
-\familyname{Filinis} % Your last name
-
-% All information in this block is optional, comment out any lines you don't need
-\title{Software Developer}
-\address{Athens, Greece}{}
-%\phone{}
-\email{nikolaos.filinis@gmail.com}
-% \homepage{}{} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-\extrainfo{\faGithub \href{https://github.com/Nickgraviton}{Nickgraviton}}
-
-%----------------------------------------------------------------------------------------
-
+% resume starts here
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	CURRICULUM VITAE
-%----------------------------------------------------------------------------------------
+% name
+\centerline{\Huge Nikos Filinis}
 
-\makecvtitle % Print the CV title
+\vspace{5pt}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+% contact information
+\centerline{\href{mailto:nikolaos.filinis@gmail.com}{nikolaos.filinis@gmail.com} | \href{https://nickgraviton.github.io/}{nickgraviton.github.io} | \href{https://github.com/Nickgraviton}{github.com/Nickgraviton}}
 
-\section{Education}
+\vspace{-10pt}
 
-\cventry{2022--Present}{PhD Candidate}
-{\newline \href{https://www.netmode.ntua.gr/}{NETMODE Lab}, National Technical University of Athens}
-{\newline Thesis Title: Orchestration of Distributed Applications across the Computing Continuum (IoT-Edge-Cloud)}
-{\newline Advisor: Prof. Symeon Papavassiliou}{}  % Arguments not required can be left empty
+% experience section
+\section*{Experience}
 
-\cventry{2015--2021}{Master of Engineering}
-{\newline Electrical and Computer Engineering}
-{National Technical University of Athens}
-{}{}%{\newline GPA: 8.73/10}{}  % Arguments not required can be left empty
+\textbf{Software Engineer / Research Assistant,} \href{https://www.netmode.ntua.gr/}{NETMODE Lab}, NTUA \hfill June 2022 -- Present \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Developed a multi-cluster orchestration platform using Kubernetes, Karmada and Submariner
+  \item Built backend services for orchestration, observability, and RL-based autoscaling in distributed systems
+  \item Deployed and managed cloud-native applications using Kubernetes, Helm, and Keycloak
+  \item Extended the W3C WoT Python stack with virtual objects, Zenoh and Docker support
+\end{itemize}
 
+\textbf{Systems Administrator,} \href{https://www.netmode.ntua.gr/}{NETMODE Lab}, NTUA \hfill June 2022 -- Present \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Administered Linux-based infrastructure including virtual machines, networking services and backup systems
+  \item Maintained and troubleshot production services including VPN, DNS, authentication, monitoring and collaboration platforms
+\end{itemize}
+% \textbf{Job Title,} \href{https://www.fstl1992.com/}{Company} -- City, ST \hfill XXXX -- XXXX \\
+% \vspace{-9pt}
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+\vspace{-18.5pt}
 
-% \section{Experience}
+% education section
+\section*{Education}
+\textbf{PhD - Computer Science} \hfill Athens, Greece \\
+National Technical University of Athens (NTUA) \hfill July 2026 (Expected) \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Dissertation: Orchestration of Distributed Applications across the Computing Continuum\\(IoT-Edge-Cloud)\\
+\end{itemize}
 
-% \subsection{%Vocational}
+\textbf{Master of Engineering (MEng) - Electrical and Computer Engineering} \hfill Athens, Greece \\
+National Technical University of Athens (NTUA) \hfill July 2021\\
+\vspace{-9pt}
+\begin{itemize}
+  \item Grade: 8.73/10
+  \item Thesis: Autoscaling of serverless applications
+\end{itemize}
 
-% \cventry{}{}{}{}{}{}
+\vspace{-18.5pt}
 
-%----------------------------------------------------------------------------------------
-%	PROJECTS SECTION
-%----------------------------------------------------------------------------------------
-\section{Projects}
+% projects section
+\section*{Projects}
 
-\cventry{}
-{\href{https://github.com/Nickgraviton/pharmasea}{PharmaSea}}
-{\newline Webapp where users can utilize crowdsourcing to create a price tracking platform for medicine}
-{\newline Used:
-\newline Front-end: \emph{HTML, CSS, JavaScript, Bootstrap}
-\newline Back-end: \emph{Java, Spring Boot, MySQL, Gradle}}{}{}
+\textbf{PharmaSea} \hfill \href{https://github.com/Nickgraviton/pharmasea}{Github} \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Built a full-stack crowdsourced medicine price tracking platform using Spring Boot and MySQL
+  \item Implemented REST APIs, user authentication and price submission workflows
+\end{itemize}
 
-\cventry{}
-{\href{https://github.com/Nickgraviton/pcl-compiler}{PCL Compiler}}
-{\newline Compiler for a Pascal-like toy language}
-{\newline Used: \emph{C++, flex, bison, LLVM}}{}{}
+\textbf{PCL Compiler} \hfill \href{https://github.com/Nickgraviton/pcl-compiler}{Github} \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Implemented a compiler for a Pascal-like language using C++, Flex, Bison and LLVM
+  \item Implemented lexical analysis, parsing, semantic analysis and LLVM IR code generation
+\end{itemize}
 
-\cventry{}
-{\href{https://github.com/Nickgraviton/airport-management-system}{Airport Management System}}
-{\newline GUI application for an airport management system}
-{\newline Used: \emph{Java, JavaFX}}{}{}
+\textbf{Airport Management System} \hfill \href{https://github.com/Nickgraviton/airport-management-system}{Github} \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Developed a desktop airport operations management system using JavaFX
+\end{itemize}
 
-\cventry{}
-{\href{https://github.com/Nickgraviton/noobcash}{Noobcash}}
-{\newline Simple blockchain implementation}
-{\newline Used: \emph{Python, Flask}}{}{}
+\textbf{Noobcash} \hfill \href{https://github.com/Nickgraviton/noobcash}{Github} \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Implemented a distributed blockchain system with peer-to-peer communication in Python using Flask
+  \item Developed transaction validation and block generation functionality
+\end{itemize}
 
-%----------------------------------------------------------------------------------------
-%	RESEARCH SECTION
-%----------------------------------------------------------------------------------------
+% alternate formatting for projects section
+% \section*{Projects}
+% \begin{itemize}
+%   \item \textbf{QuantSoftware Toolkit:} Open source Python library for data analysis and machine learning for finance
+%   \item \textbf{GitHub Visualization:} Data visualization of Git Log data using D3 to analyze project trends over time
+%   \item \textbf{Recommendation System:} Music and movie recommender systems using collaborative filtering on public datasets
+%   \item \textbf{Mac Setup:} Book that gives step by step instructions on setting up developer environment on Mac OS
+% \end{itemize}
 
-% \section{Publications}
+\vspace{-18.5pt}
 
-% \cventry{April 2022}
-% {\href{https://gitlab.com/netmode/k8s-rl-autoscaler}{Reinforcement learning-assisted autoscaling mechanisms for serverless computing platforms}}
-% {\href{https://doi.org/10.1016/j.simpat.2021.102461}{Simulation Modelling Practice and Theory Volume 116, April 2022, 102461}}
-% {\newline Automatic scaling mechanisms that use reinforcement learning to determine the optimal amount of resources that need to be provisioned to maximize performance and minimize use of said resources}
-%{\newline Used: \emph{Kubernetes, Docker, Kubeless, Python, OpenAI Gym, Tensorflow, Tf-agents}}{}
+% skills section
+\section*{Skills}
 
-%----------------------------------------------------------------------------------------
-%	SKILLS SECTION
-%----------------------------------------------------------------------------------------
+\textbf{Languages:} Java, Python, C++, C, JavaScript, SQL, HTML, CSS \\
+\textbf{Cloud \& Containers:} Kubernetes, Karmada, Docker, Helm, Submariner, Cilium \\
+\textbf{Infrastructure:} Linux, OpenStack, VMware ESXi, Proxmox, Networking, DNS, DHCP, VPN \\
+\textbf{Monitoring \& Observability:} Prometheus, Grafana, Thanos \\
+\textbf{Authentication \& Security:} Keycloak, Authentik, OpenVPN, NetBird \\
+\textbf{Frameworks \& Tools:} Spring Boot, Flask, Git, JavaFX, NetBox \\
+\textbf{Data \& Scientific Computing:} NumPy, Pandas, Matplotlib\\
 
-\section{Skills}
+\vspace{-6.5pt}
 
-\cvitem{\textbf{Programming \newline \textbf{Skills}}}{Java, Python, C++, C, JavaScript, HTML, CSS, SQL}
-\cvitem{\textbf{Frameworks/}\newline \textbf{Tools}}{Spring Boot, Git, Kubernetes, Docker, Flask, JavaFX, Matplotlib, Numpy, Pandas}
-\cvitem{\textbf{Languages}}{Greek (Native), English(C2), Spanish(C1), German(C1)}
+% languages section
+\section*{Languages}
+
+\textbf{Greek:} Native \hspace{1em}
+\textbf{English:} C2 \hspace{1em}
+\textbf{Spanish:} C1 \hspace{1em}
+\textbf{German:} C1
 
 \end{document}
