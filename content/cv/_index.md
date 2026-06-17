@@ -10,15 +10,17 @@ date: '2025-04-26T15:27:11+03:00'
 **June 2022 – Present**
 
 - Developed a multi-cluster orchestration platform using Kubernetes, Karmada and Submariner
-- Built backend services for orchestration, observability, and RL-based autoscaling in distributed systems
-- Deployed and managed cloud-native applications using Kubernetes, Helm, and Keycloak
+- Built backend services for orchestration, observability and RL-based autoscaling in distributed systems
+- Deployed and managed cloud-native applications using Kubernetes, Helm and Keycloak
 - Extended the W3C WoT Python stack with virtual objects, Zenoh and Docker support
 
 ### Systems Administrator — NETMODE Lab, NTUA
 **June 2022 – Present**
 
-- Administered Linux-based infrastructure including virtual machines, networking services and backup systems
-- Maintained and troubleshot production services including VPN, DNS, authentication, monitoring and collaboration platforms
+- Administered Linux infrastructure supporting virtualization, networking, storage and application services
+- Managed Proxmox, VMware ESXi, DNS, DHCP, VPN and NAS systems
+- Developed Ansible playbooks to automate administrator onboarding and credential management
+- Created and maintained operational documentation and service inventories
 
 ---
 

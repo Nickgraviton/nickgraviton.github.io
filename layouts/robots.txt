@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nickgraviton.github.io/sitemap.xml

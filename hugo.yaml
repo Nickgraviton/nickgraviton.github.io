@@ -2,6 +2,7 @@ baseURL: https://nickgraviton.github.io/
 locale: en-us
 title: Nikos Filinis
 theme: ["PaperMod"]
+enableRobotsTXT: true
 menu:
   main:
     - identifier: About
