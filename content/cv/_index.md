@@ -27,7 +27,7 @@ date: '2025-04-26T15:27:11+03:00'
 ## Education
 
 ### PhD - Computer Science
-National Technical University of Athens (NTUA) — July 2026 (Expected)
+National Technical University of Athens (NTUA) — July 2026
 - Dissertation: Orchestration of Distributed Applications across the Computing Continuum (IoT-Edge-Cloud)
 
 ### MEng - Electrical and Computer Engineering
