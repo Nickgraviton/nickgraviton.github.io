@@ -7,7 +7,7 @@ date: '2025-04-26T15:27:11+03:00'
 ## Experience
 
 ### Software Engineer / Research Assistant — NETMODE Lab, NTUA
-**June 2022 – Present**
+**June 2022 – July 2026**
 
 - Developed a multi-cluster orchestration platform using Kubernetes, Karmada and Submariner
 - Built backend services for orchestration, observability and RL-based autoscaling in distributed systems
@@ -15,12 +15,28 @@ date: '2025-04-26T15:27:11+03:00'
 - Extended the W3C WoT Python stack with virtual objects, Zenoh and Docker support
 
 ### Systems Administrator — NETMODE Lab, NTUA
-**June 2022 – Present**
+**June 2022 – July 2026**
 
 - Administered Linux infrastructure supporting virtualization, networking, storage and application services
 - Managed Proxmox, VMware ESXi, DNS, DHCP, VPN and NAS systems
 - Developed Ansible playbooks to automate administrator onboarding and credential management
 - Created and maintained operational documentation and service inventories
+
+---
+
+## Open Source Maintenance
+
+### Maintainer — Eclipse VOStack
+**September 2023 – Present**
+
+- Maintain Virtual Object software stack
+- [GitHub Repository](https://gitlab.eclipse.org/eclipse/vostack/vostack)
+
+### Maintainer — wotpy
+**August 2026 – Present**
+
+- Maintain open-source W3C Web of Things implementation
+- [GitHub Repository](https://github.com/eclipse-thingweb/wotpy)
 
 ---
 
@@ -63,6 +79,8 @@ National Technical University of Athens (NTUA) — July 2021
 - Implemented a distributed blockchain system with peer-to-peer communication in Python using Flask
 - Developed transaction validation and block generation functionality
 - [GitHub Repository](https://github.com/Nickgraviton/noobcash)
+
+---
 
 ## Skills
 
