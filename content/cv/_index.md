@@ -30,7 +30,7 @@ date: '2025-04-26T15:27:11+03:00'
 **September 2023 – Present**
 
 - Maintain Virtual Object software stack
-- [GitHub Repository](https://gitlab.eclipse.org/eclipse/vostack/vostack)
+- [GitLab Repository](https://gitlab.eclipse.org/eclipse/vostack/vostack)
 
 ### Maintainer — wotpy
 **August 2026 – Present**
